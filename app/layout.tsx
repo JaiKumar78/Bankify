@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ 
   variable: "--font-inter",
-  subsets: ["latin"]})
+  subsets: ["latin"],
+})
 
 const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-ibm-plex-serif",
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   title: "Horizon Bank",
   description: "Modern Banking Platform",
   icons: {
-    icon: '/icon/logo.svg'
+    icon: '/icons/logo.svg'
   }
 };
 
